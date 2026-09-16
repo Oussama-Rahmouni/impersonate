@@ -1,0 +1,33 @@
+{
+  "name": "impersonate",
+  "version": "0.1.0",
+  "description": "Production-hardened curl-impersonate wrapper for Node — real browser TLS fingerprints (JA3/JA4), session continuity, binary discovery, and coherence guards that stop your headers from contradicting your handshake.",
+  "keywords": ["curl-impersonate", "tls-fingerprint", "ja3", "ja4", "anti-bot", "web-scraping", "chrome", "firefox"],
+  "license": "MIT",
+  "author": "Oussama Rahmouni",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "impersonate": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test/test/",
+    "impersonate": "npm run build --silent && node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
