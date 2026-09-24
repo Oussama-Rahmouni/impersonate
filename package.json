@@ -1,6 +1,6 @@
 {
   "name": "impersonate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Production-hardened curl-impersonate wrapper for Node — real browser TLS fingerprints (JA3/JA4), session continuity, binary discovery, and coherence guards that stop your headers from contradicting your handshake.",
   "keywords": ["curl-impersonate", "tls-fingerprint", "ja3", "ja4", "anti-bot", "web-scraping", "chrome", "firefox"],
   "license": "MIT",
