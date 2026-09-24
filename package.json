@@ -5,6 +5,9 @@
   "keywords": ["curl-impersonate", "tls-fingerprint", "ja3", "ja4", "anti-bot", "web-scraping", "chrome", "firefox"],
   "license": "MIT",
   "author": "Oussama Rahmouni",
+  "repository": { "type": "git", "url": "git+https://github.com/Oussama-Rahmouni/impersonate.git" },
+  "homepage": "https://github.com/Oussama-Rahmouni/impersonate#readme",
+  "bugs": "https://github.com/Oussama-Rahmouni/impersonate/issues",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -24,7 +27,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/**/*.test.js\"",
-    "impersonate": "npm run build --silent && node dist/cli.js"
+    "impersonate": "npm run build --silent && node dist/cli.js",
+    "prepublishOnly": "npm run build && npm test"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
