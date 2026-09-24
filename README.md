@@ -32,8 +32,14 @@ and three footguns eat a day each:
 
 ## Install
 
+Not on npm yet — install from source:
+
 ```bash
-npm install impersonate
+git clone https://github.com/Oussama-Rahmouni/impersonate.git
+cd impersonate
+npm install
+npm run build
+npm link   # puts `impersonate` on your PATH
 ```
 
 Requires [curl-impersonate](https://github.com/lwthiker/curl-impersonate) installed
