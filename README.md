@@ -32,7 +32,13 @@ and three footguns eat a day each:
 
 ## Install
 
-Not on npm yet — install from source:
+[![npm](https://img.shields.io/npm/v/@rahmouni/impersonate)](https://www.npmjs.com/package/@rahmouni/impersonate)
+
+```bash
+npm i -g @rahmouni/impersonate
+```
+
+Or from source:
 
 ```bash
 git clone https://github.com/Oussama-Rahmouni/impersonate.git
@@ -61,7 +67,7 @@ Exit codes: `0` ok · `2` coherence warnings · `1` error.
 ## Library
 
 ```ts
-import { impersonateRequest, impersonateGet, discover, verify } from 'impersonate';
+import { impersonateRequest, impersonateGet, discover, verify } from '@rahmouni/impersonate';
 
 const res = await impersonateRequest('https://target.com/api/data', {
   profile: 'chrome116',          // discovery prefers this profile
